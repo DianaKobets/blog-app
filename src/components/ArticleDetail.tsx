@@ -1,5 +1,5 @@
-// src/components/ArticleDetail.tsx
 import React, { useState, useEffect } from "react";
+import '../components/ArticleDetail.css'; 
 import { useParams, useNavigate } from "react-router-dom";
 import { articleStore } from "../store/ArticleStore.tsx";
 
@@ -27,16 +27,23 @@ const ArticleDetail = () => {
     navigate(`/articles/edit/${article?.id}`);
   };
 
-  if (!article) return <div>Article not found</div>;
+  const handleBack = () => {
+    navigate(-1); 
+  };
+
+  if (!article) return <div className="container">Article not found</div>;
 
   return (
-    <div>
+    <>
+    <div className="container">
       <h1>{article.title}</h1>
       <p>{article.content}</p>
-      <p>Likes: {likes}</p>
-      <button onClick={handleLike}>Like</button>
+      <p className="likes">Likes: {likes}</p>
+      <button onClick={handleLike} className="btn-like">Like</button>
       <button onClick={handleEdit}>Edit Article</button>
     </div>
+      <button onClick={handleBack} className="btn-back">Назад</button>
+      </>
   );
 };
 

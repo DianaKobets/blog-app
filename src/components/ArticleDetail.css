@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .container {
+    background: #fffdfc;
+    padding: 3rem; 
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    min-width: 400px;
+    max-width: 600px;
+    margin: auto; 
+    text-align: center; 
+  }
+  
+  h1 {
+    font-size: 2.5rem; 
+    margin: 0rem 2rem;
+    color: #333; 
+  }
+  
+  p {
+    font-size: 1.2rem; 
+    margin: 1rem 0;
+    color: #555; 
+  }
+  
+  .likes {
+    font-weight: bold; 
+    color: #fda085;
+    margin: 1rem 0;
+  }
+
+  .btn-like{
+    background-color: rgba(230, 25, 0, 0.7);
+  }
+
+  .btn-like:hover{
+    background-color: rgba(230, 25, 0, 0.9);
+  }
+  
+  button {
+    background-color: #333; 
+    color: #fff; 
+    padding: 0.8rem 1.2rem; 
+    border: none;
+    border-radius: 8px; 
+    font-size: 1rem;
+    cursor: pointer;
+    width: 48%; 
+    margin: 0.5rem 1%; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  button:hover {
+    background-color: #444; 
+    transform: translateY(-2px);
+  }
+  
+  button:focus {
+    outline: none; 
+  }
+
+  .btn-back{
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 2rem;
+    margin-left: 40%;
+    max-width: 9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, colol 0.2 ease; 
+
+  }
+  
+  .btn-back:hover{
+    background-color: white;
+    color: #fda085;
+  }
